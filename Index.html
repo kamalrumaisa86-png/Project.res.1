@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Saffron Restaurant Website</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+            h1 {
+                background-color: rgba(240, 230, 140, 0.581);
+            }
+
+            p {
+                background-color: rgb(168, 145, 113);
+                color: rgb(100, 85, 67);
+            }
+
+            
+            .topnav {
+                overflow: hidden;
+                background-color: rgb(223, 232, 171);
+            }
+
+            .topnav a {
+                float:left;
+                color: rgb(0, 0, 0);
+                text-align: center;
+                padding: 14px  16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            .topnav a:hover {
+                background-color: rgb(155, 130, 100);
+                color: rgb(68, 61, 37);
+            }
+
+            .topnav a.active {
+                background-color: rgb(249, 216, 154);
+                color: black;
+            }
+
+            #miniP  p {
+                width:300px;                              
+                margin: 15px;
+                padding: 15px;
+                font-size: 20px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+
+            
+            footer {
+             background-color: dimgray;
+               padding: 20px;
+               display: flex;
+               justify-content: space-around;
+               align-items:center ;
+            }
+
+             body {
+                background-color: rgb(230, 201, 163);
+            }
+        </style>
+    </head>
+
+
+    <body>
+
+        <h1>The Saffron Restaurant</h1>
+
+        <p>More than food, it's a vibe!</p>
+
+          <div class="topnav">
+                <a class="active" href="Index.html">home</a> 
+                <a href="About.html">About</a>
+                <a href="contact-us.html">Contact us</a>
+                <a href="reviews.html">Review us</a>
+                <a href="Menu.html">Menu</a>
+          </div>
+
+
+
+          <h3>Our Restaurant</h3>
+          <section>
+            <img class="Saffron" src="ChatGPT Image Jan 30, 2026, 08_25_58 AM.png" style="height:300px;">
+            <img class="Saffron" src="ChatGPT Image Jan 30, 2026, 08_26_00 AM.png" style="height:300px;">
+            <img class="Saffron" src="ChatGPT Image Jan 30, 2026, 08_26_01 AM.png" style="height:300px;">
+          </section>
+
+          <script>
+            var saffronR = 0;      
+            carouselSaffron(); 
+            
+            function carouselSaffron () {
+                var i;
+                var x = document.getElementsByClassName("Saffron");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+
+
+                saffronR++;
+                if (saffronR > x.length) {saffronR = 1}
+                x[saffronR-1].style.display = "block";
+                setTimeout(carouselSaffron, 3000)
+            }                             
+          </script>
+
+          <h3>Our Top Foods</h3>
+          <section>
+             <img class="Foods" src="PixVerse_Image_Effect_prompt_Make me an image  (1).jpg" style="height:300px;">
+             <img class="Foods" src="PixVerse_Image_Effect_prompt_Make me an image .jpg" style="height:300px;">
+             <img class="Foods" src="PixVerse_Image_Effect_prompt_Now some  potatoe.jpg" style="height:300px;">
+             <img class="Foods" src="PixVerse_Image_Effect_prompt_Now some chicken_ (1).jpg" style="height:300px;">
+             <img class="Foods" src="PixVerse_Image_Effect_prompt_Now some chicken_.jpg" style="height:300px;">
+             <img class="Foods" src="PixVerse_Image_Effect_prompt_Now some mashed p.jpg" style="height:300px;">
+         </section>
+
+            <script>
+            var foodR = 0;      
+            carouselFoods(); 
+            
+            function carouselFoods () {
+                var i;
+                var x = document.getElementsByClassName("Foods");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+
+
+                foodR++;
+                if (foodR > x.length) {foodR = 1}
+                x[foodR-1].style.display = "block";
+                setTimeout(carouselFoods, 3000)
+            }                             
+          </script>
+
+
+
+
+
+
+
+          <div id="miniP">
+
+
+            <p>
+             <strong>Saffron</strong> is a thoughtfully designed restaurant that brings together the richness of spices, culture, 
+             and culinary artistry. Inspired by flavors from across the world, the menu blends traditional recipes with modern
+              techniques to create dishes that are both comforting and exciting. Every ingredient is carefully chosen, every spice carefully balanced,
+              and every plate crafted to tell a story of warmth and passion. With its inviting ambiance, elegant presentation, and dedication to quality, 
+              <strong>Saffron</strong> offers more than just a meal—it offers an experience where food, atmosphere, and unforgettable flavors come together.
+            </p>
+
+
+
+          </div>
+
+          <footer> <em>Rumaisa Kamal Safa</em></footer>
+    </body>
+          
+</html>
